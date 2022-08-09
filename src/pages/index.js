@@ -1,12 +1,14 @@
 import * as React from 'react';
+import Layout from '../components/layout';
 
-const Homepage = () => {
+const HomePage = () => {
   return (
-  <>
-    <h1>Hi, Mike just made hist first React Component</h1>
-    <p>Have a great day</p>
-  </>
+    <>
+      <Layout pageTitle='Home' pageHeading='Welcome to my Gatsby site!'>
+        <p>I'm going to be a GatsbyJS PRO developer.</p>
+      </Layout>
+    </>
   );
 };
 
-export default Homepage;
+export default HomePage;

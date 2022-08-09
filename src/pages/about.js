@@ -1,12 +1,15 @@
 import * as React from 'react';
+import Layout from '../components/layout';
 
-const About = () => {
+const AboutPage = () => {
   return (
-    <>
-      <h1>About</h1>
-      <p>This is the about page</p>
-    </>
+    <Layout pageTitle='About' pageHeading='About Me'>
+      <p>
+        This is the about page. It is imported as a child component of the
+        Layout component.
+      </p>
+    </Layout>
   );
-}
+};
 
-export default About;
+export default AboutPage;
