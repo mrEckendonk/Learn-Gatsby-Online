@@ -8,9 +8,11 @@ import {
   navLinkText,
   siteTitle,
 } from './layout.module.css';
+
+
 console.log('container: ', container);
 
-const Layout = ({ pageTitle, pageHeading, children }) => {
+const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -53,7 +55,7 @@ const Layout = ({ pageTitle, pageHeading, children }) => {
           </li>
         </ul>
       </nav>
-      <h1 className={heading}>{pageHeading}</h1>
+      <h1 className={heading}>{pageTitle}</h1>
       {children}
     </main>
   );
